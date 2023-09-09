@@ -186,23 +186,27 @@ return (
                 <label htmlFor="myText" className="form-label ">{props.textarea}</label>
                 <textarea className="form-control" value={text} onChange={handleOnChange} id="myText" rows="8" style={{color:props.theam === "light"?"#E4E4E4":"#434343",backgroundColor:props.theam ===  "light"?"#434343":"#E4E4E4"}}></textarea>
             </div>
-        <div className='container my-3'><center>
+        <div className='container my-3'>
             <div className="btn-group" role="group" aria-label="Basic outlined example">
                 <button type="button" className="btn btn-success mx-1" onClick={uppercase}>{props.button1}</button>
                 <button type="button" className="btn btn-success mx-1" onClick={lowercase}>{props.button2}</button>
+            </div>
+        </div>
+
+        <div className='container my-3'>
+            <div className="btn-group" role="group" aria-label="Basic outlined example">
                 <button type="button" class="btn btn-success mx-1" onClick={reverse1}>{props.button3}</button>
                 <button type="button" class="btn btn-success mx-1" onClick={reset}>{props.button4}</button>
             </div>
-            </center>
         </div>
+
     </div>
 
-        <div className='container my-5' style={{color:props.theam === "light"?"black":"#E4E4E4"}}><center>
+        <div className='container my-5' style={{color:props.theam === "light"?"black":"#E4E4E4"}}>
             <h3>Your Text Summery</h3>
             Total word is {word()}<br></br>
             Total Character is {size()}<br></br>
             Max Required time is {size() * 0.008} Minutes
-            </center>
         </div>
 
         <center>
@@ -213,7 +217,6 @@ return (
             </div>
         </div>
         </center>
-
 </div>
   )
 }
